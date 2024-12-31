@@ -1,17 +1,9 @@
 <script setup>
-import { ref } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
-const name = ref("");
+import compA from "@/components/compA.vue";
+import compB from "./components/compB.vue";
 </script>
-
 <template>
-  <input v-model="name" type="text" />
-  <div class="hi">HI {{ name }}</div>
-  <HelloWorld />
+  <div>app.vue</div>
+  <compA />
+  <compB />
 </template>
-
-<style>
-.hi {
-  border: solid 1px red;
-}
-</style>
